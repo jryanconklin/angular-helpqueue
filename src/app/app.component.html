@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="tickets" *ngFor="let ticket of models | async">
+  <p>{{ticket.student}}</p>
+  <p>{{ticket.issue}}</p>
+  <p>{{ticket.location}}</p>
+</div>
